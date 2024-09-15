@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Gagalin-Regular';
+    src:url('../fonts/Gagalin-Regular.ttf.woff') format('woff'),
+    url('../fonts/Gagalin-Regular.ttf.svg#Gagalin-Regular') format('svg'),
+    url('../fonts/Gagalin-Regular.ttf.eot'),
+    url('../fonts/Gagalin-Regular.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.galagin{
+    font-family: 'Gagalin-Regular', sans-serif;
+}
+
+
+.container{
+    margin-top: 1em;
+}
+
+#contact{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    padding: 20px 0 20px 0;
+}
+#logo img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+#projectTitle{
+    text-align: center;
+    font-style: italic;
+}
+
+#sectionSkills{
+    display: flex;
+    justify-content: space-around;
+}
+.skillsContainer{
+    text-align: center;
+    width: 450px;
+}
+.fwContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ico{
+    padding: 0.1em 0.5em 0.1em 0.5em;
+    font-size: 80px;
+    color: #1E3050;
+}
+
+.experienceContainer, .formationContainer{
+    display: flex;
+    margin: 0.5em 10em 0 10em;
+}
+.experienceDate, .formationDate{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    font-style: italic;
+}
+.experienceDesc{
+    width: 100%;
+    text-align: justify;
+}
+
+.contactContainer{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+.contactContainer a{
+    text-decoration: none;
+    color: black;
+}
+#download{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+   .container{
+       display: none;
+   }
+    #download{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #download a{
+        text-decoration: none;
+        color: white;
+        border: 1px solid #1E3050;
+        background-color: #1E3050;
+        padding: 13px;
+    }
+}
+
+@media screen and (min-width: 2561px){
+    #container{
+        width: 2500px;
+        height: 100%;
+    }
+    *{
+        font-size: 35px;
+    }
+    .ico{
+        font-size: 110px;
+    }
+    a .ico:hover{
+        opacity: 0.5;
+    }
+    .experienceContainer, .formationContainer {
+        display: flex;
+        margin: 0;
+    }
+    .experienceDate, .formationDate{
+        width: 20%;
+    }
+}
+
+
